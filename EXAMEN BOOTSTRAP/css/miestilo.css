@@ -1,0 +1,94 @@
+body{
+    background: white;
+}
+
+#logoTag{
+    height: 60px;
+}
+nav.navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+ 
+/* cambiar el color de fondo a la barra */
+nav.navbar {
+    background-color: #343A40;
+}
+
+h2, h1{
+    color: #E75D1E;
+}
+#logoTag-2{
+    height: 120px;
+}
+#btnTienda{
+    display:flex;
+    align-items: center;
+} 
+#presentacion{
+    text-align: justify;
+}
+/* .enlaceFooter{
+    text-decoration:none;
+} */
+#productos{
+    display: flex;
+}
+.card{
+    margin: 10px;
+}
+
+footer{
+    color: #343A40;
+}
+/* este es el estilo del carrito de compras con id mymodal (linea 153)el cual muestra detalles de la ventana  */
+#myModal{
+    background-color: white;
+    height: 30%;
+    width: 70%;
+}
+#btnDialog{
+    position: relative;
+    float:right;
+}
+#registroBuy{
+    position: fixed;
+    top: 40%;
+    width: 600px;
+    height: 200px;
+    border:solid seagreen 3pt;
+}
+#nosotros,#nosotros2{
+    margin:20px !important;
+    margin-top: 30px !important;
+}
+.confondo{
+    width: 100%;
+    position: fixed;
+    opacity: 0.1;
+}
+.imgAcerca{
+    width: 50%;
+    height: 30%;
+    align-items: center;
+}
+.animacionBounce:hover{
+    animation: bounce;
+    animation-duration: 1s;
+}
+.animationFade{
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+#facebook{color: white;}
+#facebook:hover{color: rgb(50, 105, 150);}
+#twiter{color: white;}
+#twiter:hover{color: rgb(93, 209, 255);}
+#skype{color: white;}
+#skype:hover{color: rgb(12, 148, 202);}
+#insta{color: white;}
+#insta:hover{
+    background: linear-gradient(to right, rgb(17, 0, 255), rgb(255, 8, 0));
+    mix-blend-mode: screen;
+    border-radius: 44.44%;
+}

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!---Integrantes-->
+    <!--Chapoñan Carlos Miguel Angel-->
+    <!--Quijano Muñoz Angel Eduardo-->
+    <!--Marín Tantalean Feranando Moises-->
+    <!--Mondragon Silva Sergio Alexander?-->
+    <!--Zorrilla Adrianzen Franzo Jesus-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <title>Tienda</title>
+</head>
+
+<body> 
+    <!--Cabecera--->
+    <header>
+        <nav class="navbar navbar-expand-lg " id="colorBarra">
+            <img id="logoTag" src="img/logo.png" class="d-inline-block align-top pr-3" alt="" loading="lazy">
+            <a class="navbar-brand" href="index.html">TagGames</a>
+            <button style="background: orange;" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html" style="color: #f5872d; border-bottom: solid 2px;"><i
+                                class="fas fa-store-alt"></i>
+                            Tienda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercaDe.html" style="color: #f5872d"><i class="fas fa-users"></i> Aceca De</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="¿Qué quieres buscar?"
+                        aria-label="Busca lo que necesitas">
+                    <button class="btn btn-warning btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--Fin Cabecera--->
+    <main>
+        <!--Inicio de Contenedor-->
+        <div class="container py-2 ">
+            <h1 class="display-5 text-center animate__animated animate__jackInTheBox">Tienda Virtual</h1>
+            <div class="row col-12">
+                <!--Inicio de Lista de producto-->
+                <div class="container">
+                    <!--Inicio de la castas-->
+                    <div class="container d-lg-flex" style="float:left">
+
+                        <!--Se añadio a los botones de las cartas la capacidad de agregar al carrito -->
+
+                        <div class="card text-center simpleCart_shelfItem product animate__animated animate__flipInY" style="width: 10rem;">
+                            <img src="img/tienda/carta-1.jpg" class="card-img-top Item Alt" alt="...">
+                            <div class="card-body d-flex flex-column" >
+                                <p class="card-title item_name mb-auto p-2">Crystron Halqifibrax DUOV-EN001 ultra rare 1st edition</p>
+                                <p class="card-text item_price p-2">S/120</p>
+                                <div id="add-button" class="p-2">
+                                    <button href="javascript:;" class="btn btn-primary align-bottom" 
+                                    type="submit" onclick="añadir('Crystron Halqifibrax DUOV-EN001 ultra rare 1st edition')">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-center simpleCart_shelfItem animate__animated animate__flipInY" style="width: 10rem; ">
+                            <img src="img/tienda/carta-2.jpg" class="card-img-top Item Alt" alt="...">
+                            <div class="card-body d-flex flex-column" >
+                                <p class="card-title item_name mb-auto p-2">Linkross ETCO-SP049 ultra rare 1st edition</p>
+                                <p class="card-text item_price p-2">S/85</p>
+                                <div id="add-button" class="p-2">
+                                    <button href="javascript:;" class="btn btn-primary align-bottom" type="submit"
+                                    onclick="añadir('Linkross ETCO-SP049 ultra rare 1st edition')">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-center simpleCart_shelfItem animate__animated animate__flipInY animate__delay-1s" style="width: 10rem;">
+                            <img src="img/tienda/carta-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-title item_name  mb-auto p-2">Chaos Space TOCH-SP009 super rare 1st edition</p>
+                                <p class="card-text item_price p-2">S/30</p>
+                                <div id="add-button"class="p-2">
+                                    <button href="javascript:;" class="btn btn-primary align-bottom" data-name="TOCH-SP009"
+                                        data-price="30" type="submit" onclick="añadir('Chaos Space TOCH-SP009 super rare 1st edition')">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-center simpleCart_shelfItem animate__animated animate__flipInY animate__delay-1s" style="width: 10rem;">
+                            <img src="img/tienda/carta-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-title item_name  mb-auto p-2">
+                                    Pot of Extravagance TOCH-SP059 ultra rare 1st edition</p>
+                                <p class="card-text item_price p-2">S/165</p>
+                                <div id="add-button" class="p-2">
+                                    <button href="javascript:;" class="btn btn-primary align-bottom" data-name="TOCH-SP059"
+                                        data-price="165" type="submit"onclick="añadir('Pot of Extravagance TOCH-SP059 ultra rare 1st edition')">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-center simpleCart_shelfItem animate__animated animate__flipInY animate__delay-2s" style="width: 10rem;">
+                            <img src="img/tienda/carta-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-title item_name  mb-auto p-2">
+                                    Toon Black Luster Soldier TOCH-SP001 ultra rare 1st edition</p>
+                                <p class="card-text item_price p-2">S/70</p>
+                                <div id="add-button" class="p-2">
+                                    <button href="javascript:;" class="btn btn-primary align-bottom" data-name="TOCH-SP001 UR"
+                                        data-price="70" type="submit" onclick="añadir('Toon Black Luster Soldier TOCH-SP001 ultra rare 1st edition')">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center simpleCart_shelfItem animate__animated animate__flipInY animate__delay-2s" style="width: 10rem;">
+                            <img src="img/tienda/carta-6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column">
+                               <p class="card-title item_name  mb-auto p-2">Girsu, the Orcust Mekk-Knight ETCO-EN024 secret rare 1st edition
+                                </p>
+                                <p class="card-text item_price p-2">S/160</p>
+                                <div id="add-button" class="p-2">
+                                    <button href="javascript:;" class="btn btn-primary sc-add-to-cart align-bottom" data-name="ETCOO-EN024"
+                                        data-price="160" type="submit" onclick="añadir('Girsu, the Orcust Mekk-Knight ETCO-EN024 secret rare 1st edition')">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                     <!--Fin de la cartas-->
+           
+
+                    <!--Inicio de carrito de producto (ANTIGUO)-->
+                         <!-- <div class="container row-cols-4">    -->
+                    <div id="carrito_compras" class="conteiner">
+                         <h3 class="display-5">Carrito de compras</h3>
+                    <div style="border: solid orange;">
+                    </div >
+                        <div class="container d-f">
+                            <div class="row">
+                                <div class="col-4" >Productos </div>
+                                <div class="col-4" >Precio </div>
+                                <div class="col-4" >Cantidad</div>
+                             </div>
+                             <!-- Contenedor de productos revisar doc codigo.js -->
+                            <div id="cart" >
+                             </div> <br>
+                            <!-- Correccion arriba pero dejado por si acaso -->
+                            <!-- <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Carta 3  <button type="button" class="btn btn-warning quitar_producto">X</button></li>
+                            </ul> -->
+                             <!-- algo asi : "<button class="btn btn-primary sc-add-to-cart" data-name="Aloo Tikis" data-price="89" type="submit">ADD</button>"" -->                         
+                            <div class="row"> 
+                                 <p class="col-4">Total General</p>
+                                 dinero total de la compra
+                                 <div class="col-4">S/<span id="totalGeneral"> </span></div>
+                                 <button class="btn btn-primary float-left" onclick="limpiar()">Vaciar</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!--Fin de carrito de producto (ANTIGUO)-->
+                </div>
+                 <!--Fin de Lista de productos-->
+            </div>
+            <!--Fin de Contenedor-->
+        </div>
+        <!--fin de Contenedor-->
+        <div class="container">
+            <!-- Inicio FORMULARIO PARA COMPRAS-->
+            <div class="my-5">
+                <div class="form-row align-items-center">
+                    <div class="col-10 my-1">
+                        <label class="sr-only" for="inlineFormInputName">Nombres y apellidos</label>
+                        <input type="text" class="form-control"
+                            placeholder="nombre y apellidos" id="names">
+                    </div>
+
+                    <div class="col-auto my-1">
+                        <button class="btn btn-primary" onclick="limpiar()">Nueva Compra</button>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="col-10 my-1">
+                        <label class="sr-only" for="inlineFormInputName" >Email</label>
+                        <input type="text" class="form-control" placeholder="Example123@example.com" id="email">
+                    </div>
+
+                    <div class="col-auto my-1">
+                        <button class="btn btn-primary " onclick="comprar() " id="buy">Enviar compra</button>
+                    </div>
+                    <dialog id="registroBuy">
+
+                    </dialog> 
+                </div>
+            </div>
+            <!-- Fin FORMULARIO -->
+
+
+        </div>
+        <!--Fin de Contenedor-->
+
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+
+                        </table>
+                        <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Inicio del footer -->
+    <footer class="page-footer" style="background: #343A40;">
+        <div class="container py-5">
+            <div class=" container-fluid row align-items-center">
+                <div class="col-lg">
+                    <img id="logoTag-2" src="img/logo.png" class=" align-top pr-3" alt="" loading="lazy">
+                </div>
+                <div class="col-auto">
+                    <h4 style="color: white;">Más Información</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="enlaceFooter" target="_blank" href="error4.html">Cartas</a></li>
+                        <li><a cl ss="enlaceFooter" target="_blank" href="error4.html">Juegos</a></li>
+                        <li><a class="enlaceFooter" target="_blank" href="error4.html">Mesas</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <h4 style="color: white;">Más productos</h4>
+                    <ul class="list-unstyled">
+                           <!-- se agrego los links a las paginas principales de cada juego -->
+                        <li><a class="enlaceFooter" target="_blank" href="https://www.pokemon.com/el/jcc-pokemon/jugar-en-linea/">Pokemón</a></li>
+                        <li><a class="enlaceFooter" target="_blank" href="https://www.yugioh-card.com/es/">Yo-Gi-Oh</a></li>
+                        <li><a class="enlaceFooter" target="_blank" href="https://magic.wizards.com/es/articles">Magic the gathering</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <h3 class="text-center" style="color: white;">Redes Sociales</h3>
+                    <div class="col text-center">
+                        <a  href="https://www.facebook.com/TCGChiclayo" type="button" target="_blank" class="btn btn-default"><i id="facebook" class="fab fa-facebook-f"
+                                style="font-size: 20px ;"></i></a>
+                        <a href="error4.html" type="button" target="_blank" class="btn btn-default"><i id="twiter" class="fab fa-twitter"
+                                style="font-size: 20px ;"></i></a>
+                        <a href="error4.html" type="button" target="_blank" class="btn btn-default"><i id="skype" class="fab fa-skype"
+                                style="font-size: 20px; "></i></i></a>
+                        <a href="https://www.instagram.com/tagclubgames/" type="button" target="_blank" class="btn btn-default"><i id="insta" class="fab fa-instagram"
+                                style="font-size: 20px ; "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p class="tcenterext-"> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fin de pie de pag -->
+    <!-- Footer extra -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Todos los derechos reservedados TagGames-club ©
+            <!-- Copyright -->
+
+    </footer>
+    <!-- Footer extra -->
+    <!--Fin de Pie de Página--->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+     integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+     -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <script src="js/JQuery JS/JQuery.js"> </script>
+
+    <script src="js/Librerias JS/jQuery.SimpleCart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- Script del grupo -->
+    <script src="js/codigo.js"></script>
+    <!-- fin del scrip del grupo -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
